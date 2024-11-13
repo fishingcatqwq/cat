@@ -1,9 +1,11 @@
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!有用，不要删>
+<link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <TITLE>(=^･ｪ･^=) </TITLE>
 
-<h1>Fishing_cat's Nest</h1>
 <br>
+<br>
+<h1>Fishing_cat's Nest</h1>
 <br>
 <svg display="none">
 	<symbol id="arrow">
@@ -78,6 +80,10 @@
 					<A HREF="https://origin.eqing.tech/#/">EasyChat</A>
 					<br><font size="1">ChatGPT镜像</font>
 				</DT>
+            <DT>
+					<A HREF="https://fontawesome.dashgame.com/">Font Awesome</A>
+					<br><font size="1">一套绝佳的图标字体库</font>
+				</DT>  
 				<DT>
 					<A HREF="https://bloodorca.github.io/hollow/">Cheat</A>
 					<br><font size="1">to modify a Hollow Knight save file</font>
@@ -416,106 +422,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            font-family: 'Arial', sans-serif;
-            padding-top: 50px; /* 给标题留出空间 */
-        }
-
-        /* 标题居中 */
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin: 0;
-        }
-
-        /* 下拉菜单容器 */
-        .dropdown {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-
-        /* 下拉按钮 */
-        .dropdown-btn {
-            padding: 12px 20px;
-            font-size: 16px;
-            background-color: #808080;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        /* 下拉按钮悬停效果 */
-        .dropdown-btn:hover {
-            background-color: #696969;
-        }
-
-        /* 下拉框 */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background-color: #ffffff;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            min-width: 160px;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        /* 下拉框选项 */
-        .dropdown-content a {
-            padding: 12px 20px;
-            text-decoration: none;
-            display: block;
-            color: #333;
-            font-size: 14px;
-            border-bottom: 1px solid #ddd;
-            border-radius: 8px;
-            transition: background-color 0.2s ease, padding-left 0.2s ease;
-        }
-
-        /* 最后一项去掉边框 */
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
-
-        /* 悬停显示下拉框 */
-        .dropdown:hover .dropdown-content {
-            display: block;
-            opacity: 1;
-        }
-
-        /* 悬停选项效果 */
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-            padding-left: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="dropdown">
-        <button class="dropdown-btn">Teleport</button>
-        <div class="dropdown-content">
-		<a href="https://www.luogu.com.cn/user/668886#article">My Blog</a>
-		<a href="https://github.com/fishingcatqwq">主页-github</a>
-            	<a href="https://www.luogu.com.cn/paste/u6w97h01">账密存储</a>
-		<a rel="noreferrer" href="https://www.bilibili.com/list/ml2952193006">Music</a>
-        </div>
-    </div>
-
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
         /* 背景遮罩 */
         .modal {
             display: flex; /* 默认显示 */
@@ -589,3 +495,75 @@
     </script>
 
 </body>
+
+<div id="mySidenav" class="sidenav">
+    <br>
+    <br>
+		<a href="https://www.luogu.com.cn/user/668886#article"><i class="fa fa-book"></i> My Blog</a>
+		<a rel="noreferrer" href="https://www.bilibili.com/list/ml2952193006"><i class="fa fa-headphones"></i> Music</a>
+  <a href="https://github.com/fishingcatqwq"><i class="fa fa-github"></i> Github</a>
+      <a href="https://www.luogu.com.cn/paste/u6w97h01"><i class="fa fa-lock"></i> 账密存储</a>
+		
+</div>
+
+<span id="toggleIcon" style="font-size:30px;cursor:pointer; z-index: 2;" onclick="toggleNav()">&#9776;</span>
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 243px;
+        position: fixed;
+        z-index: 1;  /* 保证侧边栏在图标下层 */
+        top: 0;
+        left: -175px;  /* 初始位置在屏幕外 */
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;  /* 添加平滑动画 */
+    }
+    
+    .sidenav a {
+        padding: 20px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #a9a9a9;
+        display: block;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    #toggleIcon {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2;  /* 确保图标在最上层 */
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+
+<script>
+    function toggleNav() {
+        var sidenav = document.getElementById("mySidenav");
+        var icon = document.getElementById("toggleIcon");
+    
+        if (sidenav.style.left === "0px") {  // 侧边栏已展开
+            sidenav.style.left = "-175px";  // 收起侧边栏
+            icon.innerHTML = "&#9776;";  // 改为三线图标
+            icon.style.color = "white";  // 恢复图标颜色为黑色
+        } else {  // 侧边栏未展开
+            sidenav.style.left = "0px";  // 展开侧边栏
+            icon.style.color = "white";  // 设置图标颜色为白色
+        }
+    }
+    
+</script>
