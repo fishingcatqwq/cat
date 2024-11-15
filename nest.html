@@ -56,8 +56,12 @@
     <div class="background-layer" id="backgroundLayer"></div>
 
     <!-- 左右箭头 -->
-    <div class="arrow left" onclick="changeBackground('prev')">&#10094;</div>
-    <div class="arrow right" onclick="changeBackground('next')">&#10095;</div>
+ 	<div class="arrow left" onclick="changeBackground('prev')">
+		<span class="hover-text" style="width: 37px;"><font size="7">&#10094;</font></span>
+	</div>
+    	<div class="arrow right" onclick="changeBackground('next')">
+		<span class="hover-text" style="width: 37px;"><font size="7">&#10095;</font></span>
+	</div>
 
     <script>		// https://picui.cn/  <--壁纸存这里
         const backgrounds = [
@@ -91,7 +95,7 @@
 
     <!--桌宠-->
         <style>
-            @media only screen and (max-width: 800px) {
+            @media only screen and (max-width: 400px) {
                 .catIframe {
                     display: none;
                 }
@@ -100,10 +104,8 @@
             .catIframe {
                 position: fixed;
                 width: 400px;
-                bottom: 10%;
-                left: 5%;
-                transform: translate(340%, 20%);
-                z-idnex: 99999;
+                bottom: 5%;
+ 		right: 0px;
             }
         </style>
         <iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0" class="catIframe"></iframe>
