@@ -56,19 +56,24 @@
     <div class="background-layer" id="backgroundLayer"></div>
 
     <!-- 左右箭头 -->
- 	<div class="arrow left" onclick="changeBackground('prev')">
-		<span class="hover-text" style="width: 37px;"><font size="7">&#10094;</font></span>
-	</div>
-    	<div class="arrow right" onclick="changeBackground('next')">
-		<span class="hover-text" style="width: 37px;"><font size="7">&#10095;</font></span>
-	</div>
+    <div class="arrow left" onclick="changeBackground('prev')">
+        <span class="hover-text" style="width: 37px;">
+            <font size="7">&#10094;</font>
+        </span>
+    </div>
+    <div class="arrow right" onclick="changeBackground('next')">
+        <span class="hover-text" style="width: 37px;">
+            <font size="7">&#10095;</font>
+        </span>
+    </div>
 
-    <script>		// https://picui.cn/  <--壁纸存这里
+    <script>
+        // https://picui.cn/  <--壁纸存这里
         const backgrounds = [
-	        "url(https://img.picui.cn/free/2024/11/15/6736f4f85a34d.png)", 
-	        "url(https://img.picui.cn/free/2024/11/15/6736f57d64f6f.png)",
-	        "url(https://img.picui.cn/free/2024/11/15/6736f59f234a5.png)",
-	        "url(https://img.picui.cn/free/2024/11/15/6736ffd93c578.png)"
+            "url(https://img.picui.cn/free/2024/11/15/6736f4f85a34d.png)",
+            "url(https://img.picui.cn/free/2024/11/15/6736f57d64f6f.png)",
+            "url(https://img.picui.cn/free/2024/11/15/6736f59f234a5.png)",
+            "url(https://img.picui.cn/free/2024/11/15/6736ffd93c578.png)"
         ];
 
         let currentIndex = 0;
@@ -89,825 +94,887 @@
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <!--有用，不要删-->
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <TITLE>(=^･ｪ･^=) </TITLE>
+<TITLE>(=^･ｪ･^=) </TITLE>
 
-    <!--桌宠-->
-        <style>
-            @media only screen and (max-width: 400px) {
-                .catIframe {
-                    display: none;
-                }
-            }
+<!--桌宠-->
+<style>
+    @media only screen and (max-width: 400px) {
+        .catIframe {
+            display: none;
+        }
+    }
 
-            .catIframe {
-                position: fixed;
-                width: 400px;
-                bottom: 5%;
- 		right: 0px;
-            }
-        </style>
-        <iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0" class="catIframe"></iframe>
+    .catIframe {
+        position: fixed;
+        width: 400px;
+        bottom: 5%;
+        right: 0px;
+    }
+</style>
+<iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0" class="catIframe"></iframe>
 
-        <br>
-        <br>
-        <h1>Fishing_cat's Nest</h1>
-        <br>
-        <svg display="none">
-            <symbol id="arrow">
-                <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-            </symbol>
-        </svg>
-        <div id="timeline" class="timeline">
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item2-name" class="timeline__meta">
-                        <strong class="timeline__title">OJ Portal</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-                    <div class="cat">
-                        <DT>
+<br>
+<br>
+<h1><span class="bounce-text">Fishing_cat's Nest</span></h1>
+<br>
+<svg display="none">
+    <symbol id="arrow">
+        <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+    </symbol>
+</svg>
+<div id="timeline" class="timeline">
+    <div class="timeline__item">
+        <div class="timeline__item-header">
+            <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                    <use href="#arrow" />
+                </svg>
+            </button>
+            <span class="timeline__dot"></span>
+            <span id="item2-name" class="timeline__meta">
+                <strong class="timeline__title">OJ Portal</strong>
+            </span>
+        </div>
+        <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+            <div class="cat">
+                <DT>
 
-                            <A HREF="https://www.luogu.com.cn/"><span class="hover-text">&ensp;洛谷
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;一个面向全体学生的信息学竞赛社区</font>
-                                    </font>
-                            </A>
+                    <A HREF="https://www.luogu.com.cn/"><span class="hover-text">&ensp;洛谷
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;一个面向全体学生的信息学竞赛社区</font>
+                            </font>
+                    </A>
 
-                        </DT>
-                        <DT>
+                </DT>
+                <DT>
 
-                            <A HREF="https://codeforces.com/"><span class="hover-text">&ensp;Codeforces
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;全世界最大的算法练习和竞赛平台之一</font>
-                                    </font>
-                            </A>
+                    <A HREF="https://codeforces.com/"><span class="hover-text">&ensp;Codeforces
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;全世界最大的算法练习和竞赛平台之一</font>
+                            </font>
+                    </A>
 
-                        </DT>
-                        <DT>
+                </DT>
+                <DT>
 
-                            <A HREF="https://atcoder.jp/"><span class="hover-text">&ensp;AtCoder
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;日本最大的算法竞技网站</font>
-                                    </font>
-                            </A>
+                    <A HREF="https://atcoder.jp/"><span class="hover-text">&ensp;AtCoder
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;日本最大的算法竞技网站</font>
+                            </font>
+                    </A>
 
-                        </DT>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item3-name" class="timeline__meta">
-                        <strong class="timeline__title">Tools</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-                    <div class="cat">
-                        <DT>
-
-                            <A HREF="https://oier.baoshuo.dev/"><span class="hover-text">&ensp;OIerDb NG
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;中国OI选手的一个数据库 [ 开盒 ] </font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://csacademy.com/app/graph_editor"><span class="hover-text">&ensp;Graph Editor
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;用于绘制有向和无向图的在线工具</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://www.desmos.com"><span class="hover-text">&ensp;Desmos
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;免费使用的精美数学工具组</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://www.latexlive.com/home"><span class="hover-text">&ensp;LaTeXlive
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;在线LaTeX公式编辑器</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://www.deepl.com/zh/translator"><span class="hover-text">&ensp;DeepL 翻译
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;一款基于深度学习的机器翻译软件</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://origin.eqing.tech/#/"><span class="hover-text">&ensp;EasyChat
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;聊天机器人 [ ChatGPT镜像 ] </font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://fontawesome.dashgame.com/"><span class="hover-text">&ensp;Font Awesome
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;一套绝佳的图标字体库</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://bloodorca.github.io/hollow/"><span class="hover-text">&ensp;Cheat tool
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;to modify a Hollow Knight save file</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item4-name" class="timeline__meta">
-                        <strong class="timeline__title">Wikis</strong>
-                    </span>
-                </div>
-
-                <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-                    <div class="cat">
-                        <DT>
-
-                            <A HREF="https://oi-wiki.org/"><span class="hover-text">&ensp;OI Wiki
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;编程竞赛知识整合站点</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://note.cnryh.cn/"><span class="hover-text">&ensp;Chemistry-Note
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;基于中国普通高中教科书的化学笔记项目</font>
-                                    </font>
-                            </A>
-
-                        <DT>
-
-                            <A HREF="https://wiki.52poke.com/wiki/%E4%B8%BB%E9%A1%B5"><span class="hover-text">&ensp;Pokemon's wiki
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;有关宝可梦的百科全书</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://hkss.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5"><span class="hover-text">&ensp;Hollow Knight&#39;s wiki
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;《空洞骑士》百科</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item1-name" class="timeline__meta">
-                        <strong class="timeline__title">Amusement</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-                    <div class="cat">
-                        <DT>
-
-                            <A HREF="https://www.bilibili.com/#:~:text=%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%EF%BC%88bilib"><span class="hover-text">&ensp;Bilibili
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;国内知名的视频弹幕网站</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://mangacopy.com/"><span class="hover-text">&ensp;Copy Manga
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;电子漫画阅读平台</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://www.vilipix.com/"><span class="hover-text">&ensp;Vilipix
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;提供插画作品分享的第三方Pixiv网站</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                        <DT>
-
-                            <A HREF="https://byrutgame.org/"><span class="hover-text">&ensp;Cкачать игры на ПК
-                                    <br>
-                                    <font color="#fff">
-                                        <font size="1">&emsp;PC game BT种子库（俄区）</font>
-                                    </font>
-                            </A>
-
-                        </DT>
-                    </div>
-                </div>
+                </DT>
             </div>
         </div>
+    </div>
+    <div class="timeline__item">
+        <div class="timeline__item-header">
+            <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                    <use href="#arrow" />
+                </svg>
+            </button>
+            <span class="timeline__dot"></span>
+            <span id="item3-name" class="timeline__meta">
+                <strong class="timeline__title">Tools</strong>
+            </span>
+        </div>
+        <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+            <div class="cat">
+                <DT>
 
-        <style>
-            * {
-                border: 0;
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
+                    <A HREF="https://oier.baoshuo.dev/"><span class="hover-text">&ensp;OIerDb NG
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;中国OI选手的一个数据库 [ 开盒 ] </font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://csacademy.com/app/graph_editor"><span class="hover-text">&ensp;Graph Editor
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;用于绘制有向和无向图的在线工具</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://www.desmos.com"><span class="hover-text">&ensp;Desmos
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;免费使用的精美数学工具组</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://www.latexlive.com/home"><span class="hover-text">&ensp;LaTeXlive
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;在线LaTeX公式编辑器</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://www.deepl.com/zh/translator"><span class="hover-text">&ensp;DeepL 翻译
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;一款基于深度学习的机器翻译软件</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://origin.eqing.tech/#/"><span class="hover-text">&ensp;EasyChat
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;聊天机器人 [ ChatGPT镜像 ] </font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://fontawesome.dashgame.com/"><span class="hover-text">&ensp;Font Awesome
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;一套绝佳的图标字体库</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://bloodorca.github.io/hollow/"><span class="hover-text">&ensp;Cheat tool
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;to modify a Hollow Knight save file</font>
+                            </font>
+                    </A>
+
+                </DT>
+            </div>
+        </div>
+    </div>
+    <div class="timeline__item">
+        <div class="timeline__item-header">
+            <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                    <use href="#arrow" />
+                </svg>
+            </button>
+            <span class="timeline__dot"></span>
+            <span id="item4-name" class="timeline__meta">
+                <strong class="timeline__title">Wikis</strong>
+            </span>
+        </div>
+
+        <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+            <div class="cat">
+                <DT>
+
+                    <A HREF="https://oi-wiki.org/"><span class="hover-text">&ensp;OI Wiki
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;编程竞赛知识整合站点</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://note.cnryh.cn/"><span class="hover-text">&ensp;Chemistry-Note
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;基于中国普通高中教科书的化学笔记项目</font>
+                            </font>
+                    </A>
+
+                <DT>
+
+                    <A HREF="https://wiki.52poke.com/wiki/%E4%B8%BB%E9%A1%B5"><span class="hover-text">&ensp;Pokemon's wiki
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;有关宝可梦的百科全书</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://hkss.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5"><span class="hover-text">&ensp;Hollow Knight&#39;s wiki
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;《空洞骑士》百科</font>
+                            </font>
+                    </A>
+
+                </DT>
+            </div>
+        </div>
+    </div>
+    <div class="timeline__item">
+        <div class="timeline__item-header">
+            <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                    <use href="#arrow" />
+                </svg>
+            </button>
+            <span class="timeline__dot"></span>
+            <span id="item1-name" class="timeline__meta">
+                <strong class="timeline__title">Amusement</strong>
+            </span>
+        </div>
+        <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+            <div class="cat">
+                <DT>
+
+                    <A HREF="https://www.bilibili.com/#:~:text=%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%EF%BC%88bilib"><span class="hover-text">&ensp;Bilibili
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;国内知名的视频弹幕网站</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://mangacopy.com/"><span class="hover-text">&ensp;Copy Manga
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;电子漫画阅读平台</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://www.vilipix.com/"><span class="hover-text">&ensp;Vilipix
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;提供插画作品分享的第三方Pixiv网站</font>
+                            </font>
+                    </A>
+
+                </DT>
+                <DT>
+
+                    <A HREF="https://byrutgame.org/"><span class="hover-text">&ensp;Cкачать игры на ПК
+                            <br>
+                            <font color="#fff">
+                                <font size="1">&emsp;PC game BT种子库（俄区）</font>
+                            </font>
+                    </A>
+
+                </DT>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        border: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --hue: 223;
+        --bg: hsl(var(--hue), 10%, 90%);
+        --fg: hsl(var(--hue), 10%, 10%);
+        --primary: hsl(var(--hue), 90%, 50%);
+        --trans-dur: 0.3s;
+        --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
+        font-size: calc(16px + (24 - 16) * (100vw - 320px) / (2560 - 320));
+    }
+
+    a {
+        color: #00BFFF;
+        transition: color var(--trans-dur);
+        transition: color 0.3s ease;
+        /* 为颜色变化添加过渡效果 */
+        text-decoration: none;
+        /* 去掉链接的下划线 */
+    }
+
+    a:hover {
+        color: #00BFFF;
+        /* 鼠标悬停时文字变色 */
+    }
+
+    body,
+    button {
+        color: #FFFAFA;
+        font: 1em/1.5 "IBM Plex Sans", sans-serif;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0 0 3rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .btn {
+        background-color: var(--fg);
+        border-radius: 0.25em;
+        color: var(--bg);
+        cursor: pointer;
+        padding: 0.375em 0.75em;
+        transition:
+            background-color calc(var(--trans-dur) / 2) linear,
+            color var(--trans-dur);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:hover {
+        background-color: hsl(var(--hue), 10%, 50%);
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 0.375em;
+        margin-bottom: 1.5em;
+    }
+
+    .timeline {
+        margin: auto;
+        padding: 0 1.5em;
+        width: 100%;
+        max-width: 36em;
+    }
+
+    .timeline__arrow {
+        background-color: transparent;
+        border-radius: 0.25em;
+        cursor: pointer;
+        flex-shrink: 0;
+        margin-inline-end: 0.25em;
+        outline: transparent;
+        width: 2em;
+        height: 2em;
+        transition:
+            background-color calc(var(--trans-dur) / 2) linear,
+            color var(--trans-dur);
+        -webkit-appearance: none;
+        appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .timeline__arrow:focus-visible,
+    .timeline__arrow:hover {
+        background-color: hsl(var(--hue), 10%, 50%, 0.4);
+    }
+
+    .timeline__arrow-icon {
+        display: block;
+        pointer-events: none;
+        transform: rotate(-90deg);
+        transition: transform var(--trans-dur) var(--trans-timing);
+        width: 100%;
+        height: auto;
+    }
+
+    .timeline__date {
+        font-size: 0.833em;
+        line-height: 2.4;
+    }
+
+    .timeline__dot {
+        background-color: currentColor;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+        margin: 0.625em 0;
+        margin-inline-end: 1em;
+        position: relative;
+        width: 0.75em;
+        height: 0.75em;
+    }
+
+    .timeline__item {
+        position: relative;
+        padding-bottom: 2.25em;
+    }
+
+    .timeline__item:not(:last-child):before {
+        background-color: currentColor;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1em;
+        left: 2.625em;
+        width: 0.125em;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    [dir="rtl"] .timeline__arrow-icon {
+        transform: rotate(90deg);
+    }
+
+    [dir="rtl"] .timeline__item:not(:last-child):before {
+        right: 2.625em;
+        left: auto;
+        transform: translateX(50%);
+    }
+
+    .timeline__item-header {
+        display: flex;
+    }
+
+    .timeline__item-body {
+        border-radius: 0.375em;
+        overflow: hidden;
+        margin-top: 0.5em;
+        margin-inline-start: 4em;
+        height: 0;
+    }
+
+    .timeline__item-body-content {
+        background-color: hsl(var(--hue), 10%, 50%, 0.2);
+        opacity: 0;
+        padding: 0.5em 0.75em;
+        visibility: hidden;
+        transition:
+            opacity var(--trans-dur) var(--trans-timing),
+            visibility var(--trans-dur) steps(1, end);
+    }
+
+    .timeline__meta {
+        width: 100%;
+    }
+
+    .timeline__title {
+        font-size: 1.5em;
+        line-height: 1.333;
+    }
+
+    /* Expanded state */
+    .timeline__item-body--expanded {
+        height: auto;
+    }
+
+    .timeline__item-body--expanded .timeline__item-body-content {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: var(--trans-dur), 0s;
+    }
+
+    .timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
+        transform: rotate(0);
+    }
+
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: hsl(var(--hue), 10%, 10%);
+            --fg: hsl(var(--hue), 10%, 90%);
+            --primary: hsl(var(--hue), 90%, 70%);
+        }
+    }
+</style>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const ctl = new CollapsibleTimeline("#timeline");
+    });
+
+    class CollapsibleTimeline {
+        constructor(el) {
+            this.el = document.querySelector(el);
+
+            this.init();
+        }
+        init() {
+            this.el?.addEventListener("click", this.itemAction.bind(this));
+        }
+        animateItemAction(button, ctrld, contentHeight, shouldCollapse) {
+            const expandedClass = "timeline__item-body--expanded";
+            const animOptions = {
+                duration: 300,
+                easing: "cubic-bezier(0.65,0,0.35,1)"
+            };
+
+            if (shouldCollapse) {
+                button.ariaExpanded = "false";
+                ctrld.ariaHidden = "true";
+                ctrld.classList.remove(expandedClass);
+                animOptions.duration *= 2;
+                this.animation = ctrld.animate([{
+                        height: `${contentHeight}px`
+                    },
+                    {
+                        height: `${contentHeight}px`
+                    },
+                    {
+                        height: "0px"
+                    }
+                ], animOptions);
+            } else {
+                button.ariaExpanded = "true";
+                ctrld.ariaHidden = "false";
+                ctrld.classList.add(expandedClass);
+                this.animation = ctrld.animate([{
+                        height: "0px"
+                    },
+                    {
+                        height: `${contentHeight}px`
+                    }
+                ], animOptions);
             }
+        }
+        itemAction(e) {
+            const {
+                target
+            } = e;
+            const action = target?.getAttribute("data-action");
+            const item = target?.getAttribute("data-item");
 
-            :root {
-                --hue: 223;
-                --bg: hsl(var(--hue), 10%, 90%);
-                --fg: hsl(var(--hue), 10%, 10%);
-                --primary: hsl(var(--hue), 90%, 50%);
-                --trans-dur: 0.3s;
-                --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
-                font-size: calc(16px + (24 - 16) * (100vw - 320px) / (2560 - 320));
-            }
+            if (action) {
+                const targetExpanded = action === "expand" ? "false" : "true";
+                const buttons = Array.from(this.el?.querySelectorAll(`[aria-expanded="${targetExpanded}"]`));
+                const wasExpanded = action === "collapse";
 
-            a {
-                color: #00BFFF;
-                transition: color var(--trans-dur);
-                transition: color 0.3s ease;
-                /* 为颜色变化添加过渡效果 */
-                text-decoration: none;
-                /* 去掉链接的下划线 */
-            }
+                for (let button of buttons) {
+                    const buttonID = button.getAttribute("data-item");
+                    const ctrld = this.el?.querySelector(`#item${buttonID}-ctrld`);
+                    const contentHeight = ctrld.firstElementChild?.offsetHeight;
 
-            a:hover {
-                color: #00BFFF;
-                /* 鼠标悬停时文字变色 */
-            }
-
-            body,
-            button {
-                color: #FFFAFA;
-                font: 1em/1.5 "IBM Plex Sans", sans-serif;
-            }
-
-            h1 {
-                font-size: 2em;
-                margin: 0 0 3rem;
-                padding-top: 1.5rem;
-                text-align: center;
-            }
-
-            .btn {
-                background-color: var(--fg);
-                border-radius: 0.25em;
-                color: var(--bg);
-                cursor: pointer;
-                padding: 0.375em 0.75em;
-                transition:
-                    background-color calc(var(--trans-dur) / 2) linear,
-                    color var(--trans-dur);
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .btn:hover {
-                background-color: hsl(var(--hue), 10%, 50%);
-            }
-
-            .btn-group {
-                display: flex;
-                gap: 0.375em;
-                margin-bottom: 1.5em;
-            }
-
-            .timeline {
-                margin: auto;
-                padding: 0 1.5em;
-                width: 100%;
-                max-width: 36em;
-            }
-
-            .timeline__arrow {
-                background-color: transparent;
-                border-radius: 0.25em;
-                cursor: pointer;
-                flex-shrink: 0;
-                margin-inline-end: 0.25em;
-                outline: transparent;
-                width: 2em;
-                height: 2em;
-                transition:
-                    background-color calc(var(--trans-dur) / 2) linear,
-                    color var(--trans-dur);
-                -webkit-appearance: none;
-                appearance: none;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .timeline__arrow:focus-visible,
-            .timeline__arrow:hover {
-                background-color: hsl(var(--hue), 10%, 50%, 0.4);
-            }
-
-            .timeline__arrow-icon {
-                display: block;
-                pointer-events: none;
-                transform: rotate(-90deg);
-                transition: transform var(--trans-dur) var(--trans-timing);
-                width: 100%;
-                height: auto;
-            }
-
-            .timeline__date {
-                font-size: 0.833em;
-                line-height: 2.4;
-            }
-
-            .timeline__dot {
-                background-color: currentColor;
-                border-radius: 50%;
-                display: inline-block;
-                flex-shrink: 0;
-                margin: 0.625em 0;
-                margin-inline-end: 1em;
-                position: relative;
-                width: 0.75em;
-                height: 0.75em;
-            }
-
-            .timeline__item {
-                position: relative;
-                padding-bottom: 2.25em;
-            }
-
-            .timeline__item:not(:last-child):before {
-                background-color: currentColor;
-                content: "";
-                display: block;
-                position: absolute;
-                top: 1em;
-                left: 2.625em;
-                width: 0.125em;
-                height: 100%;
-                transform: translateX(-50%);
-            }
-
-            [dir="rtl"] .timeline__arrow-icon {
-                transform: rotate(90deg);
-            }
-
-            [dir="rtl"] .timeline__item:not(:last-child):before {
-                right: 2.625em;
-                left: auto;
-                transform: translateX(50%);
-            }
-
-            .timeline__item-header {
-                display: flex;
-            }
-
-            .timeline__item-body {
-                border-radius: 0.375em;
-                overflow: hidden;
-                margin-top: 0.5em;
-                margin-inline-start: 4em;
-                height: 0;
-            }
-
-            .timeline__item-body-content {
-                background-color: hsl(var(--hue), 10%, 50%, 0.2);
-                opacity: 0;
-                padding: 0.5em 0.75em;
-                visibility: hidden;
-                transition:
-                    opacity var(--trans-dur) var(--trans-timing),
-                    visibility var(--trans-dur) steps(1, end);
-            }
-
-            .timeline__meta {
-                width: 100%;
-            }
-
-            .timeline__title {
-                font-size: 1.5em;
-                line-height: 1.333;
-            }
-
-            /* Expanded state */
-            .timeline__item-body--expanded {
-                height: auto;
-            }
-
-            .timeline__item-body--expanded .timeline__item-body-content {
-                opacity: 1;
-                visibility: visible;
-                transition-delay: var(--trans-dur), 0s;
-            }
-
-            .timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
-                transform: rotate(0);
-            }
-
-            /* Dark theme */
-            @media (prefers-color-scheme: dark) {
-                :root {
-                    --bg: hsl(var(--hue), 10%, 10%);
-                    --fg: hsl(var(--hue), 10%, 90%);
-                    --primary: hsl(var(--hue), 90%, 70%);
+                    this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
                 }
-            }
-        </style>
 
-        <script>
-            window.addEventListener("DOMContentLoaded", () => {
-                const ctl = new CollapsibleTimeline("#timeline");
+            } else if (item) {
+                const button = this.el?.querySelector(`[data-item="${item}"]`);
+                const expanded = button?.getAttribute("aria-expanded");
+
+                if (!expanded) return;
+
+                const wasExpanded = expanded === "true";
+                const ctrld = this.el?.querySelector(`#item${item}-ctrld`);
+                const contentHeight = ctrld.firstElementChild?.offsetHeight;
+
+                this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
+            }
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 背景遮罩 */
+        .modal {
+            display: flex;
+            /* 默认显示 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 半透明黑色遮罩 */
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 关闭按钮 */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        /* 弹窗内容框 */
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .close-btn:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModalBtn">&times;
+            </button>
+            <h2>
+                <font color="#D3D3D3">TIPS
+            </h2>
+            <p>
+                <font color="#D3D3D3">Turn on dark mode for better results !
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 获取弹窗和按钮元素
+        const modal = document.getElementById("myModal");
+
+        // 关闭弹窗
+        closeModalBtn.onclick = function() {
+            modal.style.display = "none"; // 隐藏弹窗
+        }
+
+        // 点击遮罩关闭弹窗
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none"; // 如果点击遮罩区域，关闭弹窗
+            }
+        }
+    </script>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标悬停透明框效果</title>
+    <style>
+        .hover-text {
+            position: relative;
+            font-size: 24px;
+            display: inline-block;
+            padding: 5px;
+            width: 250px;
+            /* 固定宽度 */
+            //text-align: center;
+            transition: all 0.2s ease;
+            /* 添加平滑过渡效果 */
+        }
+
+        /* 鼠标悬停时显示透明框，并且颜色变深 */
+        .hover-text:hover {
+            box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+            /* 透明框效果 */
+            border-radius: 5px;
+            /* 可选：让透明框角落变圆 */
+            background-color: rgba(192, 192, 192, 0.075);
+            透明灰色
+            /* 添加背景颜色变化 */
+        }
+    </style>
+</head>
+
+
+<div id="mySidenav" class="sidenav">
+    <br>
+    <br>
+    <a href="https://www.luogu.com.cn/user/668886#article">
+        <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-book"></i> My Blog
+    </a>
+    <a rel="noreferrer" href="https://www.bilibili.com/list/ml2952193006">
+        <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-headphones"></i> Music
+    </a>
+    <a href="https://github.com/fishingcatqwq">
+        <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-github"></i> Github
+    </a>
+    <a href="https://www.luogu.com.cn/paste/u6w97h01">
+        <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-lock"></i> 账密存储
+    </a>
+</div>
+
+<span id="toggleIcon" style="font-size:30px;cursor:pointer; z-index: 2;" onclick="toggleNav()">&#9776;</span>
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        /* 保证侧边栏在图标下层 */
+        top: 0;
+        left: -200px;
+        /* 初始位置在屏幕外 */
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        /* 添加平滑动画 */
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #fff;
+    }
+
+    #toggleIcon {
+        position: fixed;
+        color: #f1f1f1;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        /* 确保图标在最上层 */
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+
+<div id="mySidenav" style="position: absolute; left: -200px; transition: left 0.3s;">
+    <!-- 侧边栏内容 -->
+</div>
+
+
+<style>
+    /* 基础样式 */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+
+    /* 图标按钮样式 */
+    #toggleIcon {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        transition: transform 0.3s ease, color 0.3s ease;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+
+    /* 图标打开时的样式 */
+    #toggleIcon.open {
+        color: #ff6347;
+        /* 图标颜色变化 */
+        transform: rotate(180deg);
+        /* 图标旋转 */
+    }
+</style>
+
+
+<script>
+    function toggleNav() {
+        var sidenav = document.getElementById("mySidenav");
+        var icon = document.getElementById("toggleIcon");
+
+        if (sidenav.style.left === "0px") {
+            sidenav.style.left = "-200px"; // 收起侧边栏
+            icon.innerHTML = "&#9776;"; // 显示汉堡菜单图标
+            icon.classList.remove('open'); // 移除旋转动画
+        } else {
+            sidenav.style.left = "0px"; // 展开侧边栏
+            icon.innerHTML = "&#9866;"; // 显示单线图标
+            icon.classList.add('open'); // 添加旋转动画
+        }
+    }
+</script>
+
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 基本样式 */
+        .bounce-text {
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        /* 跳动动画 */
+        .bounce {
+            animation: bounce 0.4s ease-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-15px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            70% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // 获取要添加点击效果的元素
+        const bounceText = document.querySelector('.bounce-text');
+
+        // 为元素添加点击事件
+        bounceText.addEventListener('click', function() {
+            // 给元素添加跳动动画类
+            this.classList.add('bounce');
+
+            // 动画结束后移除类，使得下一次点击时可以重新触发动画
+            this.addEventListener('animationend', () => {
+                this.classList.remove('bounce');
             });
+        });
+    </script>
 
-            class CollapsibleTimeline {
-                constructor(el) {
-                    this.el = document.querySelector(el);
-
-                    this.init();
-                }
-                init() {
-                    this.el?.addEventListener("click", this.itemAction.bind(this));
-                }
-                animateItemAction(button, ctrld, contentHeight, shouldCollapse) {
-                    const expandedClass = "timeline__item-body--expanded";
-                    const animOptions = {
-                        duration: 300,
-                        easing: "cubic-bezier(0.65,0,0.35,1)"
-                    };
-
-                    if (shouldCollapse) {
-                        button.ariaExpanded = "false";
-                        ctrld.ariaHidden = "true";
-                        ctrld.classList.remove(expandedClass);
-                        animOptions.duration *= 2;
-                        this.animation = ctrld.animate([{
-                                height: `${contentHeight}px`
-                            },
-                            {
-                                height: `${contentHeight}px`
-                            },
-                            {
-                                height: "0px"
-                            }
-                        ], animOptions);
-                    } else {
-                        button.ariaExpanded = "true";
-                        ctrld.ariaHidden = "false";
-                        ctrld.classList.add(expandedClass);
-                        this.animation = ctrld.animate([{
-                                height: "0px"
-                            },
-                            {
-                                height: `${contentHeight}px`
-                            }
-                        ], animOptions);
-                    }
-                }
-                itemAction(e) {
-                    const {
-                        target
-                    } = e;
-                    const action = target?.getAttribute("data-action");
-                    const item = target?.getAttribute("data-item");
-
-                    if (action) {
-                        const targetExpanded = action === "expand" ? "false" : "true";
-                        const buttons = Array.from(this.el?.querySelectorAll(`[aria-expanded="${targetExpanded}"]`));
-                        const wasExpanded = action === "collapse";
-
-                        for (let button of buttons) {
-                            const buttonID = button.getAttribute("data-item");
-                            const ctrld = this.el?.querySelector(`#item${buttonID}-ctrld`);
-                            const contentHeight = ctrld.firstElementChild?.offsetHeight;
-
-                            this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
-                        }
-
-                    } else if (item) {
-                        const button = this.el?.querySelector(`[data-item="${item}"]`);
-                        const expanded = button?.getAttribute("aria-expanded");
-
-                        if (!expanded) return;
-
-                        const wasExpanded = expanded === "true";
-                        const ctrld = this.el?.querySelector(`#item${item}-ctrld`);
-                        const contentHeight = ctrld.firstElementChild?.offsetHeight;
-
-                        this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
-                    }
-                }
-            }
-        </script>
-
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                /* 背景遮罩 */
-                .modal {
-                    display: flex;
-                    /* 默认显示 */
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    /* 半透明黑色遮罩 */
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                /* 关闭按钮 */
-                .close-btn {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    background-color: #ff4444;
-                    color: white;
-                    border: none;
-                    border-radius: 50%;
-                    width: 25px;
-                    height: 25px;
-                    font-size: 16px;
-                    cursor: pointer;
-                }
-
-
-                /* 弹窗内容框 */
-                .modal-content {
-                    background-color: #fff;
-                    padding: 20px;
-                    border-radius: 8px;
-                    width: 300px;
-                    text-align: center;
-                }
-
-                .close-btn:hover {
-                    background-color: #ff0000;
-                }
-            </style>
-        </head>
-
-        <body>
-
-            <!-- 弹窗 -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <button class="close-btn" id="closeModalBtn">&times;
-                    </button>
-                    <h2>
-                        <font color="#D3D3D3">TIPS
-                    </h2>
-                    <p>
-                        <font color="#D3D3D3">Turn on dark mode for better results !
-                    </p>
-                </div>
-            </div>
-
-            <script>
-                // 获取弹窗和按钮元素
-                const modal = document.getElementById("myModal");
-
-                // 关闭弹窗
-                closeModalBtn.onclick = function() {
-                    modal.style.display = "none"; // 隐藏弹窗
-                }
-
-                // 点击遮罩关闭弹窗
-                window.onclick = function(event) {
-                    if (event.target === modal) {
-                        modal.style.display = "none"; // 如果点击遮罩区域，关闭弹窗
-                    }
-                }
-            </script>
-
-        </body>
-
-        <!DOCTYPE html>
-        <html lang="zh">
-
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>鼠标悬停透明框效果</title>
-            <style>
-                .hover-text {
-                    position: relative;
-                    font-size: 24px;
-                    display: inline-block;
-                    padding: 5px;
-                    width: 250px;
-                    /* 固定宽度 */
-                    //text-align: center;
-                    transition: all 0.2s ease;
-                    /* 添加平滑过渡效果 */
-                }
-
-                /* 鼠标悬停时显示透明框，并且颜色变深 */
-                .hover-text:hover {
-                    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-                    /* 透明框效果 */
-                    border-radius: 5px;
-                    /* 可选：让透明框角落变圆 */
-                    background-color: rgba(192, 192, 192, 0.075);
-                    透明灰色
-                    /* 添加背景颜色变化 */
-                }
-            </style>
-        </head>
-
-
-        <div id="mySidenav" class="sidenav">
-            <br>
-            <br>
-            <a href="https://www.luogu.com.cn/user/668886#article">
-                <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-book"></i> My Blog
-            </a>
-            <a rel="noreferrer" href="https://www.bilibili.com/list/ml2952193006">
-                <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-headphones"></i> Music
-            </a>
-            <a href="https://github.com/fishingcatqwq">
-                <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-github"></i> Github
-            </a>
-            <a href="https://www.luogu.com.cn/paste/u6w97h01">
-                <span class="hover-text" style="width: 150px;">&ensp;<i class="fa fa-lock"></i> 账密存储
-            </a>
-        </div>
-
-        <span id="toggleIcon" style="font-size:30px;cursor:pointer; z-index: 2;" onclick="toggleNav()">&#9776;</span>
-
-        <style>
-            body {
-                font-family: "Lato", sans-serif;
-            }
-
-            .sidenav {
-                height: 100%;
-                width: 200px;
-                position: fixed;
-                z-index: 1;
-                /* 保证侧边栏在图标下层 */
-                top: 0;
-                left: -200px;
-                /* 初始位置在屏幕外 */
-                overflow-x: hidden;
-                padding-top: 60px;
-                transition: 0.5s;
-                /* 添加平滑动画 */
-            }
-
-            .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #fff;
-                display: block;
-            }
-
-            .sidenav a:hover {
-                color: #fff;
-            }
-
-            #toggleIcon {
-                position: fixed;
-                color: #f1f1f1;
-                top: 20px;
-                left: 20px;
-                z-index: 2;
-                /* 确保图标在最上层 */
-            }
-
-            @media screen and (max-height: 450px) {
-                .sidenav {
-                    padding-top: 15px;
-                }
-
-                .sidenav a {
-                    font-size: 18px;
-                }
-            }
-        </style>
-
-        <div id="mySidenav" style="position: absolute; left: -200px; transition: left 0.3s;">
-            <!-- 侧边栏内容 -->
-        </div>
-
-
-        <style>
-            /* 基础样式 */
-            body {
-                font-family: Arial, sans-serif;
-            }
-
-
-            /* 图标按钮样式 */
-            #toggleIcon {
-                font-size: 30px;
-                cursor: pointer;
-                background-color: transparent;
-                border: none;
-                color: #ffffff;
-                transition: transform 0.3s ease, color 0.3s ease;
-                position: fixed;
-                top: 20px;
-                left: 20px;
-            }
-
-            /* 图标打开时的样式 */
-            #toggleIcon.open {
-                color: #ff6347;
-                /* 图标颜色变化 */
-                transform: rotate(180deg);
-                /* 图标旋转 */
-            }
-        </style>
-
-
-        <script>
-            function toggleNav() {
-                var sidenav = document.getElementById("mySidenav");
-                var icon = document.getElementById("toggleIcon");
-
-                if (sidenav.style.left === "0px") {
-                    sidenav.style.left = "-200px"; // 收起侧边栏
-                    icon.innerHTML = "&#9776;"; // 显示汉堡菜单图标
-                    icon.classList.remove('open'); // 移除旋转动画
-                } else {
-                    sidenav.style.left = "0px"; // 展开侧边栏
-                    icon.innerHTML = "&#9866;"; // 显示单线图标
-                    icon.classList.add('open'); // 添加旋转动画
-                }
-            }
-        </script>
+</body>
