@@ -1,10 +1,95 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* 背景图层 */
+        .background-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            /* 使背景层位于所有内容下方 */
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        /* 按钮样式 */
+        .arrow {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            z-index: 2;
+            /* 确保按钮位于内容和背景图之上 */
+        }
+
+        .left {
+            left: 20px;
+        }
+
+        .right {
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 背景图层 -->
+    <div class="background-layer" id="backgroundLayer"></div>
+
+    <!-- 左右箭头 -->
+    <div class="arrow left" onclick="changeBackground('prev')">&#10094;</div>
+    <div class="arrow right" onclick="changeBackground('next')">&#10095;</div>
+
+    <script>		// https://picui.cn/  <--壁纸存这里
+        const backgrounds = [
+	        "url(https://img.picui.cn/free/2024/11/15/6736f4f85a34d.png)", 
+	        "url(https://img.picui.cn/free/2024/11/15/6736f57d64f6f.png)",
+	        "url(https://img.picui.cn/free/2024/11/15/6736f59f234a5.png)",
+	        "url(https://img.picui.cn/free/2024/11/15/6736f8ae400e6.png)"
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground(direction) {
+            if (direction === 'next') {
+                currentIndex = (currentIndex + 1) % backgrounds.length;
+            } else {
+                currentIndex = (currentIndex - 1 + backgrounds.length) % backgrounds.length;
+            }
+            document.getElementById('backgroundLayer').style.backgroundImage = backgrounds[currentIndex];
+        }
+
+        // 初始化背景图
+        document.getElementById('backgroundLayer').style.backgroundImage = backgrounds[currentIndex];
+    </script>
+</body>
+
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<!有用，不要删>
+<!--有用，不要删-->
     <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <TITLE>(=^･ｪ･^=) </TITLE>
 
-    <!桌宠>
+    <!--桌宠-->
         <style>
             @media only screen and (max-width: 800px) {
                 .catIframe {
@@ -583,13 +668,6 @@
             }
         </script>
 
-        <style>
-            body {
-                margin: 0;
-                background: #424949;
-            }
-        </style>
-
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -701,7 +779,8 @@
                     /* 透明框效果 */
                     border-radius: 5px;
                     /* 可选：让透明框角落变圆 */
-                    background-color: rgba(192, 192, 192, 0.05);  透明灰色
+                    background-color: rgba(192, 192, 192, 0.075);
+                    透明灰色
                     /* 添加背景颜色变化 */
                 }
             </style>
